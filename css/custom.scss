@@ -1,32 +1,115 @@
 ---
-
 ---
 
+body {
+  font-family: Arial;
+  font-weight: normal;
+}
+
 .header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2c3438;
+  width: 100%;
+  height: 600px;
+  font-family: "Gill Sans", sans-serif;
+  font-style: normal;
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  .name {
+    color: #cd5301;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .title {
+    color: #ee9222;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.project-container {
+  width: 230px;
+  height: 290px;
+  background-color: #2c3438;
+  border-radius: 10px;
+}
+
+.project-name {
+  color: #cd5301;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#picture {
+  width: 230px;
+  height: 250px;
+
+  background-size: 300px 300px;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.pic_transform {
+  overflow: hidden;
+  height: 0px;
+}
+#picture:hover .pic_transform {
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+.text_display {
+  padding-top: 10px;
+  font-size: 16px;
+
+  text-align: center;
+  color: #fff;
+}
+#picture:hover .text_display {
+  background: rgba(0, 0, 0, 0.5);
+
+  color: #fff;
+  height: 250px;
+}
+
+.navbar {
+  padding-top: 0px;
+  background-color: #cd5301;
+  color: #fea502;
+
+  ul {
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cd5301;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #2C3438;
-    width: 100%;
-    height: 600px;
-    font-family: "Gill Sans", sans-serif;
-    font-style: normal;
+  }
 
-    .image{
-       width: 300px;
-       height: 300px;
-    }
-    .name {
-        color: #CD5301;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 48px;
-    }
-    .title {
-        color: #EE9222;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 36px;
-    }
+  li a {
+    display: block;
+    color: #fea502;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  li a:hover:not(.active) {
+    color: #e59401;
+  }
+
+  .active {
+    background-color: #04aa6d;
+  }
 }

@@ -1,6 +1,6 @@
 ---
-layout: index-style
+layout: subpage
 title: Projects
 permalink: /projects/
 ---
-<h1>Test</h1>
+<h1>Projects</h1>
